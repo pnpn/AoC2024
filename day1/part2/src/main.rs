@@ -17,7 +17,7 @@ fn main() {
     let path = format!("{}/../input.txt", env!("CARGO_MANIFEST_DIR"));
     let binding = read_to_string(path).unwrap();
     let lines: Vec<&str> = binding.lines().collect();
-    println!("{}", lines.first().unwrap());
+
     let left: Vec<u64> = lines
         .clone()
         .iter()
